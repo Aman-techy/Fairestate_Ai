@@ -367,27 +367,6 @@ User Input (7 fields)
 ```
 
 ---
-
-## 🎤 Pitch Script
-
-> **"Imagine you're buying a property. The seller says it's worth 50 per unit area. But is it really? How do you know you're not overpaying?"**
->
-> **FairEstate AI** solves this. It's not just a price predictor — it's your **AI deal advisor**.
->
-> You enter the property details — age, MRT distance, convenience stores, location. Our **5 AI agents** go to work:
->
-> - The **Valuation Agent** predicts the fair price.
-> - The **Fairness Agent** tells you if it's overpriced.
-> - The **Location Agent** analyzes the neighborhood.
-> - The **Comparable Agent** finds similar properties.
-> - The **Negotiation Agent** tells you how much to negotiate.
->
-> The result? A **deal score out of 100**, a **fair price range**, and **actionable buyer advice** — all in seconds.
->
-> **FairEstate AI — Know the fair value before you buy.**
-
----
-
 ## 📑 PPT Content Outline
 
 | Slide | Content |
