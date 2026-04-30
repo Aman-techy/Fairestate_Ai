@@ -299,68 +299,6 @@ Convenience Factor:
 
 Final score clamped to [0, 100]
 ```
-
----
-
-## 🌐 Hosting / Deployment Options
-
-Yes — FairEstate AI can be hosted! Here are your options:
-
-### Option 1: **Render** (Recommended — Free tier available)
-
-| Component | Service | How |
-|-----------|---------|-----|
-| Backend | Render Web Service | Deploy `backend/` as a Python web service with `uvicorn main:app --host 0.0.0.0 --port $PORT` |
-| Frontend | Render Static Site | Run `npm run build` → deploy `frontend/dist/` as static site |
-
-**Steps:**
-1. Push code to GitHub.
-2. Create a **Web Service** on [render.com](https://render.com) for the backend:
-   - Root: `backend/`
-   - Build: `pip install -r requirements.txt && python train_model.py`
-   - Start: `uvicorn main:app --host 0.0.0.0 --port $PORT`
-3. Create a **Static Site** for the frontend:
-   - Root: `frontend/`
-   - Build: `npm install && npm run build`
-   - Publish: `dist`
-4. Update `frontend/src/api/api.js` with your Render backend URL.
-
-### Option 2: **Railway** (Free tier available)
-
-Similar to Render — deploy backend and frontend as separate services.
-
-### Option 3: **Vercel (frontend) + Railway (backend)**
-
-| Component | Platform |
-|-----------|----------|
-| Frontend | Vercel (free, optimized for React) |
-| Backend | Railway or Render |
-
-**Frontend on Vercel:**
-```bash
-cd frontend
-npx vercel --prod
-```
-
-### Option 4: **Docker** (for self-hosting / VPS)
-
-Create a `docker-compose.yml`:
-
-```yaml
-version: '3.8'
-services:
-  backend:
-    build: ./backend
-    ports:
-      - "8000:8000"
-  frontend:
-    build: ./frontend
-    ports:
-      - "3000:3000"
-    depends_on:
-      - backend
-```
-
 ### ⚠️ Important for deployment
 
 When deploying, update the API base URL in `frontend/src/api/api.js`:
