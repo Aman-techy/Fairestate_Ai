@@ -367,23 +367,7 @@ User Input (7 fields)
 ```
 
 ---
-## 📑 PPT Content Outline
 
-| Slide | Content |
-|-------|---------|
-| 1 | **Title** — FairEstate AI: Know the Fair Value Before You Buy |
-| 2 | **Problem** — Buyers have no way to know if asking price is fair |
-| 3 | **Solution** — AI-powered deal advisor, not just price predictor |
-| 4 | **USP** — 5 AI agents: Valuation, Fairness, Location, Comparable, Negotiation |
-| 5 | **Architecture** — React + FastAPI + Scikit-learn full-stack |
-| 6 | **Feature Engineering** — 6 derived features from raw dataset |
-| 7 | **Model Comparison** — 4 models trained, Random Forest selected (R²=0.82) |
-| 8 | **Demo** — Live walkthrough: form → results → verdict → charts |
-| 9 | **Results** — Deal score, fair range, similar properties, negotiation advice |
-| 10 | **Future Scope** — Map view, real-time listings, mortgage calculator, mobile app |
-| 11 | **Thank You** — Team, tech stack, GitHub link |
-
----
 
 ## 🔮 Future Scope
 
